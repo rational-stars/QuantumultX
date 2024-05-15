@@ -15,10 +15,10 @@
 QunatumultX
 ------------------------------------------
 [task_local] 
-1 9 * * * http://192.168.31.215:5500/juejin.js, tag=掘金签到+每天免费抽奖一次, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/LoadBalance.png, enabled=true
+1 9 * * * https://raw.githubusercontent.com/rational-stars/QuantumultX/main/juejin/juejin.js, tag=掘金签到+每天免费抽奖一次, img-url=https://raw.githubusercontent.com/rational-stars/QuantumultX/main/icon/juejin.png, enabled=true
 
 [rewrite_local]
-^https:\/\/api\.juejin\.cn\/user_api\/v1\/user\/dynamic url script-request-header http://192.168.31.215:5500/juejin-re.js
+^https:\/\/api\.juejin\.cn\/user_api\/v1\/user\/dynamic url script-request-header https://raw.githubusercontent.com/rational-stars/QuantumultX/main/juejin/juejin-re.js
 
 [mitm]
 hostname = api.juejin.cn
