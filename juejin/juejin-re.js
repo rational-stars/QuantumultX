@@ -2,7 +2,8 @@
 
 @Name：掘金签到+每天免费抽奖一次
 @Author：rational_stars
-@Date：2024 年 05 月 15 日 21:11:59
+@Done：2024 年 05 月 15 日 21:11:59
+@Date：2024 年 05 月 16 日 10:03:35
 
 脚本兼容：只测试过 QuantumultX 没有其他 app 无法测试望理解
 
@@ -15,7 +16,7 @@
 QunatumultX
 ------------------------------------------
 [task_local] 
-0 0 8 * * https://raw.githubusercontent.com/rational-stars/QuantumultX/main/juejin/juejin.js, tag=掘金签到+每天免费抽奖一次, img-url=https://raw.githubusercontent.com/rational-stars/QuantumultX/main/icon/juejin.png, enabled=true
+20 5 0 * * https://raw.githubusercontent.com/rational-stars/QuantumultX/main/juejin/juejin.js, tag=掘金签到+每天免费抽奖一次, img-url=https://raw.githubusercontent.com/rational-stars/QuantumultX/main/icon/juejin.png, enabled=true
 
 [rewrite_local]
 ^https:\/\/api\.juejin\.cn\/user_api\/v1\/user\/dynamic url script-request-header https://raw.githubusercontent.com/rational-stars/QuantumultX/main/juejin/juejin-re.js
