@@ -34,40 +34,49 @@ hostname = api.juejin.cn
 6、如果任何单位或个人认为此脚本可能涉嫌侵犯其权利，应及时通知并提供身份证明，所有权证明，我们将在收到认证文件确认后删除此脚本。
 7、所有直接或间接使用、查看此脚本的人均应该仔细阅读此声明。本人保留随时更改或补充此声明的权利。一旦您使用或复制了此脚本，即视为您已接受此免责声明。
 ******************************************/
-const _0x3a27c3 = _0x5d01
-;(function (_0x363fce, _0x266728) {
-  const _0x5c8f5d = _0x5d01,
-    _0x27fbc2 = _0x363fce()
+const _0x2ce9ef = _0xd32c
+;(function (_0x59073b, _0x4a8768) {
+  const _0x1adf71 = _0xd32c,
+    _0x5b6540 = _0x59073b()
   while (!![]) {
     try {
-      const _0x2516b9 =
-        (parseInt(_0x5c8f5d(0x10b)) / 0x1) * (parseInt(_0x5c8f5d(0xf2)) / 0x2) +
-        -parseInt(_0x5c8f5d(0x10a)) / 0x3 +
-        (-parseInt(_0x5c8f5d(0x101)) / 0x4) *
-          (-parseInt(_0x5c8f5d(0x104)) / 0x5) +
-        parseInt(_0x5c8f5d(0x109)) / 0x6 +
-        -parseInt(_0x5c8f5d(0xf6)) / 0x7 +
-        (-parseInt(_0x5c8f5d(0xec)) / 0x8) *
-          (-parseInt(_0x5c8f5d(0x100)) / 0x9) +
-        -parseInt(_0x5c8f5d(0xfc)) / 0xa
-      if (_0x2516b9 === _0x266728) break
-      else _0x27fbc2['push'](_0x27fbc2['shift']())
-    } catch (_0x4e5195) {
-      _0x27fbc2['push'](_0x27fbc2['shift']())
+      const _0x2983f3 =
+        parseInt(_0x1adf71(0x92)) / 0x1 +
+        -parseInt(_0x1adf71(0x9e)) / 0x2 +
+        (-parseInt(_0x1adf71(0xb5)) / 0x3) * (parseInt(_0x1adf71(0xa4)) / 0x4) +
+        parseInt(_0x1adf71(0xb0)) / 0x5 +
+        parseInt(_0x1adf71(0xa5)) / 0x6 +
+        (parseInt(_0x1adf71(0xaf)) / 0x7) * (-parseInt(_0x1adf71(0xab)) / 0x8) +
+        (parseInt(_0x1adf71(0x98)) / 0x9) * (parseInt(_0x1adf71(0xb1)) / 0xa)
+      if (_0x2983f3 === _0x4a8768) break
+      else _0x5b6540['push'](_0x5b6540['shift']())
+    } catch (_0x1fed3d) {
+      _0x5b6540['push'](_0x5b6540['shift']())
     }
   }
-})(_0x331d, 0xc9e35)
-let Cookie = $prefs['valueForKey'](_0x3a27c3(0xf4)) || ''
+})(_0x206b, 0xb5331)
+function _0xd32c(_0xadccc5, _0x40b36e) {
+  const _0x206b6c = _0x206b()
+  return (
+    (_0xd32c = function (_0xd32c9b, _0x5696bf) {
+      _0xd32c9b = _0xd32c9b - 0x8d
+      let _0x1a337c = _0x206b6c[_0xd32c9b]
+      return _0x1a337c
+    }),
+    _0xd32c(_0xadccc5, _0x40b36e)
+  )
+}
+let Cookie = $prefs[_0x2ce9ef(0x90)](_0x2ce9ef(0xb2)) || ''
 if (!Cookie) return $notify('掘金获取ck', '失败'), $done()
-const baseUrl = 'https://api.juejin.cn/growth_api/v1',
-  Title = _0x3a27c3(0x108),
+const baseUrl = _0x2ce9ef(0xa3),
+  Title = _0x2ce9ef(0x8f),
   headers = { Cookie: Cookie },
   URL_INFO = {
-    check_in: _0x3a27c3(0xfa),
-    draw: _0x3a27c3(0xfe),
-    get_cur_point: '/get_cur_point',
-    lottery_config: _0x3a27c3(0x10c),
-    get_counts: _0x3a27c3(0xee),
+    check_in: _0x2ce9ef(0xb4),
+    draw: _0x2ce9ef(0xa7),
+    get_cur_point: _0x2ce9ef(0x8e),
+    lottery_config: '/lottery_config/get',
+    get_counts: _0x2ce9ef(0x9d),
   }
 let USER_INFO = {
     free_number: 0x0,
@@ -76,141 +85,129 @@ let USER_INFO = {
     point_count: 0x0,
   },
   notifyContent = ''
-const handelResponse = async (_0x4ec4c4, _0x375eb8) => {
-    const _0x5e5c28 = _0x3a27c3,
-      _0x562e9a = _0x4ec4c4?.['data']
-    switch (_0x375eb8) {
-      case _0x5e5c28(0xfa):
-        _0x562e9a?.[_0x5e5c28(0x111)]
+const handelResponse = async (_0x5b2967, _0xc93b87) => {
+    const _0x3eeb3b = _0x2ce9ef,
+      _0x3eb4c8 = _0x5b2967?.[_0x3eeb3b(0xa0)]
+    switch (_0xc93b87) {
+      case _0x3eeb3b(0xb4):
+        _0x3eb4c8?.[_0x3eeb3b(0x96)]
           ? (notifyContent +=
-              _0x5e5c28(0x105) + _0x562e9a?.[_0x5e5c28(0x111)] + '矿石')
-          : (notifyContent += _0x4ec4c4[_0x5e5c28(0xed)])
+              '签到成功，获得' + _0x3eb4c8?.[_0x3eeb3b(0x96)] + '矿石')
+          : (notifyContent += _0x5b2967[_0x3eeb3b(0x95)])
         break
-      case '/lottery/draw':
-        const _0x4fbc58 = '抽中' + _0x562e9a?.[_0x5e5c28(0x102)]
-        ;(notifyContent += _0x4fbc58), console['log'](_0x4fbc58)
+      case _0x3eeb3b(0xa7):
+        const _0x3c7390 = '抽中' + _0x3eb4c8?.[_0x3eeb3b(0xa8)]
+        ;(notifyContent += _0x3c7390), console[_0x3eeb3b(0xa1)](_0x3c7390)
         break
-      case _0x5e5c28(0xef):
-        USER_INFO[_0x5e5c28(0xff)] = _0x562e9a
+      case '/get_cur_point':
+        USER_INFO[_0x3eeb3b(0x8d)] = _0x3eb4c8
         break
-      case _0x5e5c28(0x10c):
-        USER_INFO['free_number'] = _0x562e9a?.['free_count']
+      case _0x3eeb3b(0x99):
+        USER_INFO[_0x3eeb3b(0x9b)] = _0x3eb4c8?.['free_count']
         break
-      case _0x5e5c28(0xee):
-        ;(USER_INFO[_0x5e5c28(0xf3)] = _0x562e9a?.[_0x5e5c28(0xf3)]),
-          (USER_INFO['sum_count'] = _0x562e9a?.[_0x5e5c28(0xfd)])
+      case _0x3eeb3b(0x9d):
+        ;(USER_INFO[_0x3eeb3b(0x9f)] = _0x3eb4c8?.[_0x3eeb3b(0x9f)]),
+          (USER_INFO[_0x3eeb3b(0x9c)] = _0x3eb4c8?.[_0x3eeb3b(0x9c)])
         break
       default:
-        console[_0x5e5c28(0x106)](_0x562e9a)
+        console['log'](_0x3eb4c8)
         break
     }
-    return _0x562e9a
+    return _0x3eb4c8
   },
-  Request = (_0x29b850, _0x715229 = _0x3a27c3(0xea), _0x451e75 = {}) => {
-    const _0x3306c7 = _0x3a27c3
-    let _0x3b6a75 = {
-      url: baseUrl + _0x29b850,
+  Request = (_0x4ff030, _0x314f21 = _0x2ce9ef(0xa6), _0x3a2338 = {}) => {
+    const _0x502137 = _0x2ce9ef
+    let _0x554fe5 = {
+      url: baseUrl + _0x4ff030,
       headers: headers,
-      method: _0x715229,
-      body: JSON[_0x3306c7(0xf5)](_0x451e75),
+      method: _0x314f21,
+      body: JSON[_0x502137(0xac)](_0x3a2338),
       opts: { redirection: ![] },
     }
-    return $task[_0x3306c7(0x10e)](_0x3b6a75)[_0x3306c7(0x10d)](
-      (_0x349071) => {
-        const _0x55b9f8 = _0x3306c7,
-          _0x4c57db = JSON[_0x55b9f8(0xf9)](_0x349071?.[_0x55b9f8(0xfb)])
+    return $task[_0x502137(0x94)](_0x554fe5)[_0x502137(0x97)](
+      (_0x15c05a) => {
+        const _0x440147 = _0x502137,
+          _0x46e754 = JSON[_0x440147(0xb3)](_0x15c05a?.[_0x440147(0x93)])
         return (
-          console[_0x55b9f8(0x106)](_0x4c57db['err_msg']),
-          handelResponse(_0x4c57db, _0x29b850)
+          console['log'](_0x46e754[_0x440147(0x95)]),
+          handelResponse(_0x46e754, _0x4ff030)
         )
       },
-      (_0x3f3304) => {
-        const _0x16d9ab = _0x3306c7
-        console['log'](
-          _0x29b850 + _0x16d9ab(0xf8) + _0x3f3304[_0x16d9ab(0x103)]
+      (_0x14a8a0) => {
+        const _0x39072c = _0x502137
+        console[_0x39072c(0xa1)](
+          _0x4ff030 + _0x39072c(0xad) + _0x14a8a0['error']
         )
       }
     )
   }
+function _0x206b() {
+  const _0x24ad4c = [
+    'valueForKey',
+    '连续签到天数',
+    '73620OxhWgk',
+    'body',
+    'fetch',
+    'err_msg',
+    'incr_point',
+    'then',
+    '369yIBZyw',
+    '/lottery_config/get',
+    'get_counts',
+    'free_number',
+    'sum_count',
+    '/get_counts',
+    '1636784rvzDor',
+    'cont_count',
+    'data',
+    'log',
+    '，当前矿石数',
+    'https://api.juejin.cn/growth_api/v1',
+    '4711616Cualdd',
+    '6746700joIcxB',
+    'GET',
+    '/lottery/draw',
+    'lottery_name',
+    'draw',
+    'lottery_config',
+    '136fZYrMi',
+    'stringify',
+    '接口调用失败：',
+    'POST',
+    '3206Edvcjk',
+    '4253770SlpUuQ',
+    '170110OGEBwl',
+    'xq-juejin-ck',
+    'parse',
+    '/check_in',
+    '3LEuVGe',
+    'point_count',
+    '/get_cur_point',
+    '掘金通知',
+  ]
+  _0x206b = function () {
+    return _0x24ad4c
+  }
+  return _0x206b()
+}
 ;(async () => {
-  const _0x52cd9b = _0x3a27c3
-  await Promise[_0x52cd9b(0xf1)]([
-    Request(URL_INFO['lottery_config'], _0x52cd9b(0xea)),
-    Request(URL_INFO[_0x52cd9b(0x112)], _0x52cd9b(0xf0)),
-    Request(URL_INFO[_0x52cd9b(0x10f)], _0x52cd9b(0xea)),
+  const _0x21b08a = _0x2ce9ef
+  Promise['all']([
+    Request(URL_INFO['check_in'], _0x21b08a(0xae)),
+    Request(URL_INFO[_0x21b08a(0x9a)], _0x21b08a(0xa6)),
   ]),
-    USER_INFO['free_number'] &&
-      (await Request(URL_INFO[_0x52cd9b(0xf7)], _0x52cd9b(0xf0))),
-    await Request(URL_INFO[_0x52cd9b(0x110)], _0x52cd9b(0xea)),
+    await Request(URL_INFO[_0x21b08a(0xaa)], 'GET'),
+    USER_INFO[_0x21b08a(0x9b)] &&
+      (await Request(URL_INFO[_0x21b08a(0xa9)], _0x21b08a(0xae))),
+    await Request(URL_INFO['get_cur_point'], _0x21b08a(0xa6)),
     console['log'](
-      _0x52cd9b(0xeb) +
-        USER_INFO[_0x52cd9b(0xf3)] +
-        _0x52cd9b(0x107) +
-        USER_INFO[_0x52cd9b(0xfd)] +
-        _0x52cd9b(0x113) +
-        USER_INFO[_0x52cd9b(0xff)]
+      _0x21b08a(0x91) +
+        USER_INFO[_0x21b08a(0x9f)] +
+        '，累计签到天数' +
+        USER_INFO[_0x21b08a(0x9c)] +
+        _0x21b08a(0xa2) +
+        USER_INFO[_0x21b08a(0x8d)]
     ),
     $notify(Title, '', notifyContent),
     $done()
 })()
-function _0x5d01(_0x3242c5, _0x390e28) {
-  const _0x331d04 = _0x331d()
-  return (
-    (_0x5d01 = function (_0x5d0102, _0x1a5e16) {
-      _0x5d0102 = _0x5d0102 - 0xea
-      let _0x131a71 = _0x331d04[_0x5d0102]
-      return _0x131a71
-    }),
-    _0x5d01(_0x3242c5, _0x390e28)
-  )
-}
-function _0x331d() {
-  const _0x2462c6 = [
-    'draw',
-    '接口调用失败：',
-    'parse',
-    '/check_in',
-    'body',
-    '24096950eHswmi',
-    'sum_count',
-    '/lottery/draw',
-    'point_count',
-    '234522ughMBA',
-    '161064VChNJP',
-    'lottery_name',
-    'error',
-    '160bwLzUT',
-    '签到成功，获得',
-    'log',
-    '，累计签到天数',
-    '掘金通知',
-    '2831166DVXxlC',
-    '1628937UDQbRQ',
-    '285292ISLuiG',
-    '/lottery_config/get',
-    'then',
-    'fetch',
-    'get_counts',
-    'get_cur_point',
-    'incr_point',
-    'check_in',
-    '，当前矿石数',
-    'GET',
-    '连续签到天数',
-    '352brZZhG',
-    'err_msg',
-    '/get_counts',
-    '/get_cur_point',
-    'POST',
-    'all',
-    '10mRkUJS',
-    'cont_count',
-    'xq-juejin-ck',
-    'stringify',
-    '3876446cGGUtB',
-  ]
-  _0x331d = function () {
-    return _0x2462c6
-  }
-  return _0x331d()
-}
