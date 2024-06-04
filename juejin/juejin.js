@@ -3,9 +3,9 @@
 @Name：掘金签到+每天免费抽奖一次
 @Author：rational_stars
 @Done：2024 年 05 月 15 日 21:11:59
-@Date：2024 年 05 月 26 日 00:22:43
+@Date：2024 年 06 月 04 日 15:47:27
 
-脚本兼容：只测试过 QuantumultX 没有其他 app 无法测试望理解
+脚本兼容：基于chavy大佬 env.js  只测试过 QuantumultX 没有其他 app 无法测试望理解
 
 
 使用方法：
