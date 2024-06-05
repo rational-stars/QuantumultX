@@ -1,0 +1,7 @@
+{
+    "name": "rational_stars",
+    "description": "https://github.com/rational-stars/QuantumultX",
+    "task": [
+        "20 5 0 * * * https://raw.githubusercontent.com/rational-stars/QuantumultX/main/juejin/juejin.js, tag=掘金签到+每天免费抽奖一次, img-url=https://raw.githubusercontent.com/rational-stars/QuantumultX/main/icon/juejin.png, enabled=true"
+    ]
+}
