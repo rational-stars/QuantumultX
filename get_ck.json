@@ -1,27 +1,41 @@
 {
-    "id": "xq.sub",
-    "name": "向前的订阅ck",
-    "author": "@xq",
-    "icon": "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/pyy.png",
-    "repo": "",
-    "apps": [
+  "id": "xq.sub",
+  "name": "向前的订阅ck",
+  "author": "@xq",
+  "icon": "https://cloud.rational-stars.top/file/1749453132951_avatar.png",
+  "repo": "",
+  "apps": [
+    {
+      "id": "dianfei",
+      "name": "我的电费",
+      "author": "仅作学习交流",
+      "repo": "",
+      "descs_html": [
+        "<p style='margin-left:20px;'>本接口及源码仅限学习研究，严禁将接口使用于电信诈骗、网络赌博、恶意营销、非法传销 等违法活动，引起任何法律责任概不负责。</p>"
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/rational-stars/QuantumultX/refs/heads/main/icon/zhihuifangdong.png",
+        "https://raw.githubusercontent.com/rational-stars/QuantumultX/refs/heads/main/icon/zhihuifangdong.png"
+      ],
+      "keys": ["xq-dianfei-ck", "xq-dianfei-headers"],
+      "settings": [
         {
-            "id": "dianfei",
-            "name": "我的电费",
-            "author": "仅作学习交流",
-            "repo": "",
-            "descs_html": [
-                "<p style='margin-left:20px;'>本接口及源码仅限学习研究，严禁将接口使用于电信诈骗、网络赌博、恶意营销、非法传销 等违法活动，引起任何法律责任概不负责。</p>"
-            ],
-            "icons": [
-                "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/pyy.png",
-                "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/pyy.png"
-            ],
-            "keys": [
-                "xq-dianfei-ck",
-                "xq-dianfei-headers"
-            ]
+          "id": "xq-dianfei-ck",
+          "name": "我的电费ck",
+          "val": null,
+          "type": "textarea",
+          "autoGrow": true,
+          "desc": "我的电费ck"
+        },
+        {
+          "id": "xq-dianfei-headers",
+          "name": "我的电费请求头",
+          "val": null,
+          "type": "textarea",
+          "autoGrow": true,
+          "desc": "我的电费请求头"
         }
-
-    ]
+      ]
+    }
+  ]
 }
