@@ -14,7 +14,7 @@ QunatumultX
 ------------------------------------------
 
 [rewrite_local]
-^https:\/\/h5-v4\.packertec\.com\/api\/booking\/user\/get_user_wallet_list url script-request-header https://raw.githubusercontent.com/rational-stars/QuantumultX/main/Mealcard/Mealcard-re.js
+^https:\/\/h5-v4\.packertec\.com\/api\/booking\/user\/get_user_wallet_list url script-request-header https://raw.githubusercontent.com/rational-stars/QuantumultX/refs/heads/main/Mealcard/Mealcard-re.js
 [mitm]
 hostname = h5-v4.packertec.com
 
