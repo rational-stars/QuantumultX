@@ -1,0 +1,51 @@
+{
+    "id": "xq.sub",
+    "name": "向前的订阅 ck",
+    "author": "@xq",
+    "icon": "https://cloud.rational-stars.top/file/avatar.jpg",
+    "repo": "",
+    "apps": [
+        {
+            "id": "dianfei",
+            "name": "dianfei",
+            "author": "仅作学习交流",
+            "repo": "",
+            "descs_html": [
+                "<p style='margin-left:20px;'>本接口及源码仅限学习研究，严禁将接口使用于电信诈骗、网络赌博、恶意营销、非法传销 等违法活动，引起任何法律责任概不负责。</p>"
+            ],
+            "icons": [
+                "https://cloud.rational-stars.top/file/avatar.jpg",
+                "https://cloud.rational-stars.top/file/avatar.jpg"
+            ],
+            "keys": [
+                "xq-dianfei-ck"
+            ]
+            // "settings": [
+            //     {
+            //         "id": "@codeServer.open",
+            //         "name": "开启code模式",
+            //         "val": false,
+            //         "type": "boolean",
+            //         "desc": "默认关闭"
+            //     },
+            //     {
+            //         "id": "@codeServer.address",
+            //         "name": "服务器地址",
+            //         "val": "",
+            //         "type": "text",
+            //         "desc": "填入服务器地址，如http://127.0.0.1:99"
+            //     },
+            //     {
+            //         "id": "@codeServer.wxId",
+            //         "name": "微信wxId",
+            //         "val": "",
+            //         "type": "textarea",
+            //         "autoGrow": true,
+            //         "rows": 1,
+            //         "desc": "微信wxId,多账号用,分隔，非必需参数，仅当服务器有需求时填入"
+            //     }
+            // ]
+        }
+
+    ]
+}
