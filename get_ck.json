@@ -19,32 +19,32 @@
             ],
             "keys": [
                 "xq-dianfei-ck"
+            ],
+            "settings": [
+                {
+                    "id": "@codeServer.open",
+                    "name": "开启code模式",
+                    "val": false,
+                    "type": "boolean",
+                    "desc": "默认关闭"
+                },
+                {
+                    "id": "@codeServer.address",
+                    "name": "服务器地址",
+                    "val": "",
+                    "type": "text",
+                    "desc": "填入服务器地址，如http://127.0.0.1:99"
+                },
+                {
+                    "id": "@codeServer.wxId",
+                    "name": "微信wxId",
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": true,
+                    "rows": 1,
+                    "desc": "微信wxId,多账号用,分隔，非必需参数，仅当服务器有需求时填入"
+                }
             ]
-            // "settings": [
-            //     {
-            //         "id": "@codeServer.open",
-            //         "name": "开启code模式",
-            //         "val": false,
-            //         "type": "boolean",
-            //         "desc": "默认关闭"
-            //     },
-            //     {
-            //         "id": "@codeServer.address",
-            //         "name": "服务器地址",
-            //         "val": "",
-            //         "type": "text",
-            //         "desc": "填入服务器地址，如http://127.0.0.1:99"
-            //     },
-            //     {
-            //         "id": "@codeServer.wxId",
-            //         "name": "微信wxId",
-            //         "val": "",
-            //         "type": "textarea",
-            //         "autoGrow": true,
-            //         "rows": 1,
-            //         "desc": "微信wxId,多账号用,分隔，非必需参数，仅当服务器有需求时填入"
-            //     }
-            // ]
         }
 
     ]
