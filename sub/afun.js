@@ -1,26 +1,45 @@
-// Loon 脚本：自动更新订阅链接
-// cron "0 8 * * *" script-path=https://yourdomain.com/loon-auto-sub.js, tag=自动更新订阅链接
+// Loon 脚本：自动更新 afun 的订阅 token
+const api = "https://boxjs.com/query/data/xq-afun";
 
-const boxjsURL = "https://boxjs.com/query/data/xq-afun"; // 获取最新链接的接口
-const LOON_KEY = "afun_sub_url"; // Loon 中变量名
+$httpClient.get(api, function (error, response, data) {
+  if (error) {
+    console.log("❌ 获取失败: " + error);
+    $done();
+    return;
+  }
 
-(async () => {
+  let json;
   try {
-    const res = await fetch(boxjsURL);
-    const data = await res.json();
+    json = JSON.parse(data);
+  } catch (e) {
+    console.log("❌ 返回内容不是 JSON");
+    $done();
+    return;
+  }
 
-    // 自动识别 URL 字段
-    const newURL = data?.val;
+  const newSubUrl = json.val?.trim();
 
-    if (!newURL || !newURL.startsWith("https")) {
-      throw new Error("未获取到合法的订阅链接");
+  if (!newSubUrl || !/^https?:\/\/.+/i.test(newSubUrl)) {
+    console.log("❌ 无效订阅地址: " + newSubUrl);
+    $done();
+    return;
+  }
+
+  // 匹配旧的 afun 订阅地址（只替换 sbgfw.trafficmanager.net 的）
+  const regex = /https:\/\/sbgfw\.trafficmanager\.net\/api\/v1\/client\/subscribe\?token=[\w-]+/g;
+
+  $configuration.get((confText) => {
+    if (!regex.test(confText)) {
+      console.log("⚠️ 未匹配到旧订阅地址，未做修改");
+      $done();
+      return;
     }
 
-    $persistentStore.write(newURL, LOON_KEY);
-    $notification.post("Loon 订阅更新成功", "", `已更新为：${newURL}`);
-  } catch (err) {
-    $notification.post("订阅更新失败", "", err.message);
-  } finally {
-    $done();
-  }
-})();
+    const updated = confText.replace(regex, newSubUrl);
+
+    $configuration.set(updated, () => {
+      console.log("✅ 成功替换订阅地址为：\n" + newSubUrl);
+      $done();
+    });
+  });
+});
